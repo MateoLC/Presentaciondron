@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM node:18-alpine as builder
+FROM node:20-slim AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
