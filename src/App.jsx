@@ -50,14 +50,14 @@ function App() {
     switch(index) {
       case 0:
         return (
-          <div className="flex-col gap-8 items-center text-center animate-slide-up">
-            <span className="tag mb-4">VISIÓN ESTRATÉGICA</span>
+          <div className="flex-col gap-4 md:gap-8 items-center text-center animate-slide-up px-4 md:px-0 mt-[-2rem] md:mt-0">
+            <span className="tag mb-4 text-xs md:text-sm">VISIÓN ESTRATÉGICA</span>
             
-            <h1 className="hero-title max-w-5xl mx-auto tracking-tight font-bold text-slate-900 leading-tight">
+            <h1 className="hero-title max-w-5xl mx-auto tracking-tight font-bold text-slate-900 leading-tight text-3xl md:text-5xl lg:text-6xl">
               La idea no es comprar un dron. La idea es crear la primera infraestructura aérea con drones para apoyar operaciones mineras y comunidades rurales en Colombia.
             </h1>
             
-            <div className="flex justify-center items-center gap-6 mt-16 animate-slide-up delay-200">
+            <div className="flex flex-row flex-wrap justify-center items-center gap-4 md:gap-6 mt-6 md:mt-16 animate-slide-up delay-200">
               <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm text-slate-600">
                 <Hexagon size={40} className="stroke-1" />
               </div>
@@ -77,10 +77,10 @@ function App() {
         );
       case 1:
         return (
-          <div className="w-full flex-col h-full justify-center">
-            <span className="tag animate-slide-up">El Desafío en el Territorio</span>
-            <div className="grid-2 mt-8">
-              <div className="flex-col gap-6 animate-slide-up delay-100">
+          <div className="w-full flex-col h-full justify-center px-4 md:px-0 mt-[-1rem] md:mt-0">
+            <span className="tag animate-slide-up text-xs md:text-sm">El Desafío en el Territorio</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 mt-4 md:mt-8 w-full max-w-6xl mx-auto">
+              <div className="flex-col gap-4 md:gap-6 animate-slide-up delay-100">
                 <ul className="space-y-6">
                   <li className="flex gap-4 p-4 rounded-xl border border-transparent hover:border-slate-100 hover:bg-slate-50 transition-colors">
                     <div className="text-slate-400 mt-1"><Activity size={24} /></div>
@@ -106,14 +106,14 @@ function App() {
                 </ul>
               </div>
               
-              <div className="corporate-card flex flex-col justify-center h-full animate-slide-up delay-200 bg-slate-50/50">
-                <div className="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-8">
-                  <Zap size={32} />
+              <div className="corporate-card flex flex-col justify-center h-full animate-slide-up delay-200 bg-slate-50/50 p-6 md:p-8">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-6 md:mb-8">
+                  <Zap className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
-                <h3 className="text-3xl font-bold text-slate-900 leading-tight mb-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight mb-4 md:mb-6">
                   Solución Estratégica
                 </h3>
-                <p className="text-xl text-slate-600 leading-relaxed font-medium">
+                <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
                   Las tecnologías UAV (drones) permiten resolver simultáneamente los problemas <span className="text-emerald-700 font-bold">logísticos</span>, <span className="text-emerald-700 font-bold">operativos</span> y <span className="text-emerald-700 font-bold">sociales</span> de la región sin multiplicar los costos fijos.
                 </p>
               </div>
@@ -122,14 +122,14 @@ function App() {
         );
       case 2:
         return (
-          <div className="w-full flex-col h-full justify-center text-center">
-            <span className="tag mx-auto animate-slide-up">Operador UAS Industrial (Certificación RAC 100)</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-6 mb-16 tracking-tight animate-slide-up delay-100">
+          <div className="w-full flex-col h-full justify-center text-center px-4 md:px-0">
+            <span className="tag mx-auto animate-slide-up text-xs md:text-sm">Operador UAS Industrial (Certificación RAC 100)</span>
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mt-4 md:mt-6 mb-8 md:mb-16 tracking-tight animate-slide-up delay-100 px-2">
               Plataforma Tecnológica Transversal
             </h2>
             
-            <div className="grid-3 text-left w-full max-w-6xl mx-auto animate-slide-up delay-200">
-              <div className="corporate-card flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform group">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left w-full max-w-6xl mx-auto animate-slide-up delay-200">
+              <div className="corporate-card flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform group p-6 md:p-8">
                 <div className="p-3 bg-slate-100 rounded-xl text-slate-700 group-hover:bg-emerald-50 group-hover:text-emerald-700 transition-colors">
                   <Factory size={28} />
                 </div>
@@ -164,40 +164,49 @@ function App() {
         );
       case 3:
         return (
-          <div className="w-full h-full flex flex-col justify-center max-w-5xl mx-auto">
-            <span className="tag animate-slide-up mb-8">Ruta de Ejecución</span>
+          <div className="w-full h-full flex flex-col justify-center max-w-5xl mx-auto px-4 md:px-0 mt-[-1.5rem] md:mt-0">
+            <span className="tag animate-slide-up mb-4 md:mb-8 text-xs md:text-sm mx-auto md:mx-0">Ruta de Ejecución</span>
             
-            <div className="animate-slide-up delay-100 mt-12 bg-white rounded-3xl p-10 border border-slate-100 shadow-sm relative">
-              <div className="timeline">
+            <div className="animate-slide-up delay-100 mt-6 md:mt-12 bg-white rounded-3xl p-6 md:p-10 border border-slate-100 shadow-sm relative overflow-hidden">
+              <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-0 justify-between relative before:absolute before:inset-0 before:w-1 md:before:w-full before:h-full md:before:h-1 before:bg-slate-100 before:left-6 md:before:left-0 before:top-0 md:before:top-6 before:-z-10">
                 
                 {/* Fase 1 */}
-                <div className="timeline-item active flex flex-col text-center items-center">
-                  <div className="timeline-dot"></div>
-                  <h3 className="text-xl font-bold text-emerald-700 mb-3">Fase 1<br/><span className="text-slate-800 text-lg">Agrícola y Social (Año 1)</span></h3>
-                  <p className="text-slate-500 text-sm leading-relaxed px-4">
-                    Uso de drones para aspersión (comunidades), formación de talento local y obtención de certificación RAC 100.
-                  </p>
-                  <div className="mt-4 inline-flex px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-semibold items-center gap-1 border border-emerald-100">
-                    <CheckCircle2 size={12}/> Licencia Social
+                <div className="flex-1 flex flex-row md:flex-col items-center md:text-center gap-4 md:gap-0 relative">
+                  <div className="w-12 h-12 md:mb-6 rounded-full bg-emerald-100 border-4 border-white flex-shrink-0 z-10 mx-auto hidden md:block"></div>
+                  <div className="w-12 h-12 rounded-full bg-emerald-100 border-4 border-white flex-shrink-0 z-10 md:hidden"></div>
+                  <div className="flex flex-col items-start md:items-center">
+                    <h3 className="text-lg md:text-xl font-bold text-emerald-700 mb-1 md:mb-3">Fase 1<br/><span className="text-slate-800 text-base md:text-lg">Agrícola y Social (Año 1)</span></h3>
+                    <p className="text-slate-500 text-sm leading-relaxed md:px-4 text-left md:text-center">
+                      Uso de drones para aspersión (comunidades), formación de talento local y obtención RAC 100.
+                    </p>
+                    <div className="mt-3 inline-flex px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-semibold items-center gap-1 border border-emerald-100 md:mx-auto">
+                      <CheckCircle2 size={12}/> Licencia Social
+                    </div>
                   </div>
                 </div>
 
                 {/* Fase 2 */}
-                <div className="timeline-item flex flex-col text-center items-center">
-                  <div className="timeline-dot bg-slate-100 border-slate-200"></div>
-                  <h3 className="text-xl font-bold text-slate-400 mb-3">Fase 2<br/><span className="text-slate-500 text-lg">Servicios Operativos</span></h3>
-                  <p className="text-slate-400 text-sm leading-relaxed px-4">
-                    Inspecciones especializadas, monitoreo aéreo, levantamientos para minería y apoyo en campo.
-                  </p>
+                <div className="flex-1 flex flex-row md:flex-col items-center md:text-center gap-4 md:gap-0 relative">
+                  <div className="w-12 h-12 md:mb-6 rounded-full bg-slate-100 border-4 border-white flex-shrink-0 z-10 mx-auto hidden md:block"></div>
+                  <div className="w-12 h-12 rounded-full bg-slate-100 border-4 border-white flex-shrink-0 z-10 md:hidden"></div>
+                  <div className="flex flex-col items-start md:items-center">
+                    <h3 className="text-lg md:text-xl font-bold text-slate-400 mb-1 md:mb-3">Fase 2<br/><span className="text-slate-500 text-base md:text-lg">Servicios Operativos</span></h3>
+                    <p className="text-slate-400 text-sm leading-relaxed md:px-4 text-left md:text-center">
+                      Inspecciones especializadas, monitoreo aéreo, levantamientos para minería y apoyo.
+                    </p>
+                  </div>
                 </div>
 
                 {/* Fase 3 */}
-                <div className="timeline-item flex flex-col text-center items-center">
-                  <div className="timeline-dot bg-slate-100 border-slate-200"></div>
-                  <h3 className="text-xl font-bold text-slate-400 mb-3">Fase 3<br/><span className="text-slate-500 text-lg">Logística de Carga</span></h3>
-                  <p className="text-slate-400 text-sm leading-relaxed px-4">
-                    Introducción de vehículos aéreos de carga pesada y rutas logísticas autónomas consolidadas.
-                  </p>
+                <div className="flex-1 flex flex-row md:flex-col items-center md:text-center gap-4 md:gap-0 relative">
+                  <div className="w-12 h-12 md:mb-6 rounded-full bg-slate-100 border-4 border-white flex-shrink-0 z-10 mx-auto hidden md:block"></div>
+                  <div className="w-12 h-12 rounded-full bg-slate-100 border-4 border-white flex-shrink-0 z-10 md:hidden"></div>
+                  <div className="flex flex-col items-start md:items-center">
+                    <h3 className="text-lg md:text-xl font-bold text-slate-400 mb-1 md:mb-3">Fase 3<br/><span className="text-slate-500 text-base md:text-lg">Logística de Carga</span></h3>
+                    <p className="text-slate-400 text-sm leading-relaxed md:px-4 text-left md:text-center">
+                      Introducción de vehículos aéreos de carga pesada y rutas logísticas autónomas.
+                    </p>
+                  </div>
                 </div>
 
               </div>
@@ -206,20 +215,20 @@ function App() {
         );
       case 4:
         return (
-          <div className="w-full h-full flex flex-col items-center justify-center text-center max-w-5xl mx-auto -mt-16">
-            <span className="tag animate-slide-up">Inversión Inicial</span>
+          <div className="w-full h-full flex flex-col items-center justify-center text-center max-w-5xl mx-auto mt-[-3rem] md:-mt-16 px-4 md:px-0">
+            <span className="tag animate-slide-up text-xs md:text-sm">Inversión Inicial</span>
             
-            <div className="animate-slide-up delay-100 my-10">
-              <h2 className="text-7xl font-bold text-slate-900 tracking-tighter">
-                ≈ 200 Millones <span className="text-4xl text-slate-400 font-medium">COP</span>
+            <div className="animate-slide-up delay-100 my-4 md:my-10">
+              <h2 className="text-5xl md:text-7xl font-bold text-slate-900 tracking-tighter flex flex-col sm:flex-row items-center justify-center gap-2">
+                ≈ 200 Millones <span className="text-2xl md:text-4xl text-slate-400 font-medium leading-none mt-2 sm:mt-0">COP</span>
               </h2>
             </div>
             
-            <p className="text-xl text-emerald-700 font-medium bg-emerald-50 px-6 py-2 rounded-full mb-12 animate-slide-up delay-200">
+            <p className="text-sm md:text-xl text-emerald-700 font-medium bg-emerald-50 px-4 md:px-6 py-2 rounded-full mb-6 md:mb-12 animate-slide-up delay-200">
               Inversión moderada para construir una plataforma escalable.
             </p>
 
-            <div className="flex w-full justify-center gap-16 animate-slide-up delay-300">
+            <div className="flex flex-col md:flex-row w-full justify-center gap-4 md:gap-16 animate-slide-up delay-300">
               {/* Left Column */}
               <div className="flex flex-col text-left auto-cols-max">
                 <div className="flex items-center gap-4 py-4 border-b border-slate-100">
@@ -233,8 +242,8 @@ function App() {
               </div>
               
               {/* Right Column */}
-              <div className="flex flex-col text-left auto-cols-max">
-                <div className="flex items-center gap-4 py-4 border-b border-slate-100">
+              <div className="flex flex-col text-left auto-cols-max mt-4 md:mt-0">
+                <div className="flex items-center gap-4 py-4 border-b border-slate-100 md:border-t-0 border-t">
                   <div className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></div>
                   <span className="text-lg text-slate-700 font-medium whitespace-nowrap pr-4">Certificación RAC 100</span>
                 </div>
@@ -248,23 +257,23 @@ function App() {
         );
       case 5:
         return (
-          <div className="w-full h-full flex flex-col items-center justify-center text-center">
-            <span className="tag mb-12 animate-slide-up">Proyección a 36 Meses</span>
+          <div className="w-full h-full flex flex-col items-center justify-center text-center px-4 md:px-0">
+            <span className="tag mb-8 md:mb-12 animate-slide-up text-xs md:text-sm">Proyección a 36 Meses</span>
             
             <div className="max-w-4xl mx-auto animate-slide-up delay-100">
-              <h2 className="text-3xl md:text-5xl font-medium text-slate-800 leading-tight italic tracking-tight mb-8">
+              <h2 className="text-2xl md:text-5xl font-medium text-slate-800 leading-tight italic tracking-tight mb-6 md:mb-8">
                 "Construir infraestructura aérea rural mediante drones industriales para minería, territorio y desarrollo comunitario.
               </h2>
-              <p className="text-2xl md:text-4xl font-bold text-emerald-700 mt-6 tracking-tight">
+              <p className="text-xl md:text-4xl font-bold text-emerald-700 mt-4 md:mt-6 tracking-tight">
                 Este proyecto no es un dron.<br/>Es una nueva capa de infraestructura tecnológica."
               </p>
             </div>
             
-            <div className="mt-20 animate-slide-up delay-300 flex gap-6">
-              <button className="px-8 py-4 bg-emerald-700 text-white font-bold rounded-lg hover:bg-emerald-800 transition-colors shadow-sm hover:shadow-md">
+            <div className="mt-12 md:mt-20 animate-slide-up delay-300 flex flex-col sm:flex-row gap-4 md:gap-6 px-4 md:px-0 w-full sm:w-auto">
+              <button className="px-6 md:px-8 py-3 md:py-4 bg-emerald-700 text-white font-bold rounded-lg hover:bg-emerald-800 transition-colors shadow-sm hover:shadow-md text-sm md:text-base w-full sm:w-auto">
                 Iniciar Conversación
               </button>
-              <button className="px-8 py-4 bg-white text-slate-700 border border-slate-200 font-semibold rounded-lg hover:bg-slate-50 transition-colors shadow-sm">
+              <button className="px-6 md:px-8 py-3 md:py-4 bg-white text-slate-700 border border-slate-200 font-semibold rounded-lg hover:bg-slate-50 transition-colors shadow-sm text-sm md:text-base w-full sm:w-auto">
                 Descargar Resumen Ejecutivo
               </button>
             </div>
